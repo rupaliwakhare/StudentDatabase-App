@@ -1,4 +1,4 @@
-import "./Registered.css";
+// import "./Registered.css";
 
 function Registered() {
   const students = JSON.parse(localStorage.getItem("students")) || [];

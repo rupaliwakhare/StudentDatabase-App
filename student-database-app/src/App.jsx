@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Registration from "./Component/pages/Registration";
-import Inquiry from "./Component/pages/Inquiry";
-import Demo from "./Component/pages/Demo";
-import Registered from "./Component/pages/Registered";
-import Navbar from "./Component/pages/Navbar";
+import Registration from "./Component/Registration";
+import Inquiry from "./Component/Inquiry";
+import Demo from "./Component/Demo"
+import Registered from "./Component/Registered";
+import Navbar from "./Component/Navbar";
 
 function App() {
   return (

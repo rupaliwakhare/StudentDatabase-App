@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Inquiry.css";
+// import "./Inquiry.css";
 
 function Inquiry() {
   const [data, setData] = useState([]);

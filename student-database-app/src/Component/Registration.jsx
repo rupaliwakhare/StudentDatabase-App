@@ -24,14 +24,17 @@ function Registration() {
     <div className="registration-container">
       <h2>Student Ragistration</h2>
       <form onSubmit={handleSubmit}>
-        <label>Name</label>
+        <br />
+        <label>Name : </label>
         <input
           name="name"
           value={formData.name}
           onChange={handleChange}
           required
         />
-        <label >Branch</label>
+        <br />
+        <label >Branc : </label>
+       
         <select name="" id="">
           <option value="">Select your branch</option>
           <option value="">Front-End</option>
@@ -41,23 +44,28 @@ function Registration() {
           <option value="">Ui-Ux</option>
           <option value="">Graphics</option>
         </select>
-       console.log(select);
+       {/* console.log(select); */}
+       <br />
        
-        <label>Email</label>
+        <label>Email : </label>
+       
         <input
           name="email"
           value={formData.email}
           onChange={handleChange}
           required
         />
-        <label>Phone</label>
+        <br />
+        <label>Phone : </label>
+        
         <input
           name="phone"
           value={formData.phone}
           onChange={handleChange}
           required
         />
-        <button type="submit">Register</button>
+        <br /><br />
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
