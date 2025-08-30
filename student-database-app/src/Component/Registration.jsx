@@ -3,6 +3,7 @@ import { useState } from "react";
 function Registration() {
   const [formData, setFormData] = useState({
     name: "",
+    branch:"",
     email: "",
     phone: "",
   });
@@ -16,7 +17,7 @@ function Registration() {
     const existing = JSON.parse(localStorage.getItem("students")) || [];
     localStorage.setItem("students", JSON.stringify([...existing, formData]));
     alert("Student Registered!");
-    setFormData({ name: "", email: "", phone: "" });
+    setFormData({ name: "", branch:"", email: "", phone: "" });
   };
 
   return (
@@ -30,6 +31,18 @@ function Registration() {
           onChange={handleChange}
           required
         />
+        <label >Branch</label>
+        <select name="" id="">
+          <option value="">Select your branch</option>
+          <option value="">Front-End</option>
+          <option value="">Back-End</option>
+          <option value="">Full-stack</option>
+          <option value="">Application</option>
+          <option value="">Ui-Ux</option>
+          <option value="">Graphics</option>
+        </select>
+       console.log(select);
+       
         <label>Email</label>
         <input
           name="email"
